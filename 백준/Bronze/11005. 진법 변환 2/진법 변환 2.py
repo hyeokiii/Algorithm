@@ -2,8 +2,8 @@ n ,b = map(int,input().split())
 num_list = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 result = ''
-while b <= n:
+while n:
     result += num_list[n % b]
-    n = n // b
+    n //= b
     
-print((result+num_list[n])[::-1])
+print(result[::-1])
