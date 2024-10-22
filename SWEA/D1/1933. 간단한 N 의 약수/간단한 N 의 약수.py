@@ -36,8 +36,7 @@ print(f)                                문자열 1개 출력하는 예제
 #import sys
 #sys.stdin = open("input.txt", "r")
 N = int(input())
-result = ''
+
 for i in range(1,int(N+1)):
     if N%i == 0:
-        result += str(i)+' '
-print(result)
+        print(i,end=' ')
