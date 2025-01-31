@@ -1,9 +1,4 @@
 function solution(array, height) {
-    let answer = 0;
-    array.map((item)=>{
-        if(item > height){
-            answer++
-        }
-    })
-    return answer;
+    let answer= array.filter((item)=>(item>height))
+    return answer.length
 }
