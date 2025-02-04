@@ -1,7 +1,6 @@
 function solution(my_string) {
-    var answer = 0;
-    [...my_string].map(item=>{
-        if(Number(item)) answer += Number(item)
-    })
-    return answer;
+    const answer = my_string.replace(/[^0-9]/g, '')
+                    .split('')
+                        .reduce((acc, curr) => acc + Number(curr), 0);
+    return answer
 }
