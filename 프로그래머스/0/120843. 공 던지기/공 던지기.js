@@ -1,3 +1,3 @@
 function solution(numbers, k) {
-    return parseInt((k-1)*2 % numbers.length)+1
+    return numbers[(k-1)*2 % numbers.length]
 }
