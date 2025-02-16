@@ -1,11 +1,9 @@
 const dx = [-1, -1, -1, 0, 0, 1, 1, 1];
 const dy = [-1, 0, 1, -1, 1, -1, 0, 1];
-
 function solution(board) {
     const n = board.length;
     const danger = JSON.parse(JSON.stringify(board)); //깊은 복사
     let num = 0
-
     for(let x = 0; x < n; x++){
         for(let y = 0; y < n; y++){
             if(!board[x][y]) continue;
